@@ -1,0 +1,417 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	  <TargetFramework>net48</TargetFramework>
+	  <OutputPath>bin\Debug\</OutputPath>
+	  <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+	  <!-- dom made this in case anyone wants to say its theirs-->
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\0Harmony.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp-firstpass">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\Assembly-CSharp-firstpass.dll</HintPath>
+    </Reference>
+    <Reference Include="AssetRipper.VersionUtilities">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\AssetRipper.VersionUtilities.dll</HintPath>
+    </Reference>
+    <Reference Include="AssetsTools.NET">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\AssetsTools.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="bHapticsLib">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\bHapticsLib.dll</HintPath>
+    </Reference>
+    <Reference Include="I18N">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\I18N.dll</HintPath>
+    </Reference>
+    <Reference Include="I18N.CJK">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\I18N.CJK.dll</HintPath>
+    </Reference>
+    <Reference Include="I18N.MidEast">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\I18N.MidEast.dll</HintPath>
+    </Reference>
+    <Reference Include="I18N.Other">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\I18N.Other.dll</HintPath>
+    </Reference>
+    <Reference Include="I18N.Rare">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\I18N.Rare.dll</HintPath>
+    </Reference>
+    <Reference Include="I18N.West">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\I18N.West.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppMono.Security">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\Il2CppMono.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2Cppmscorlib">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\Il2Cppmscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\Il2CppSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem.Configuration">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\Il2CppSystem.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem.Core">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\Il2CppSystem.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem.Numerics">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\Il2CppSystem.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem.Xml">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\Il2CppSystem.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="IndexRange">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\IndexRange.dll</HintPath>
+    </Reference>
+    <Reference Include="JNISharp">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\JNISharp.dll</HintPath>
+    </Reference>
+    <Reference Include="MelonLoader">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\MelonLoader.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Btls.Interface">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\Mono.Btls.Interface.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\Mono.Cecil.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil.Mdb">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\Mono.Cecil.Mdb.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil.Pdb">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\Mono.Cecil.Pdb.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil.Rocks">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\Mono.Cecil.Rocks.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.CompilerServices.SymbolWriter">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\Mono.CompilerServices.SymbolWriter.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.CSharp">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\Mono.CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Data.Sqlite">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\Mono.Data.Sqlite.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Data.Tds">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\Mono.Data.Tds.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Posix">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\Mono.Posix.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Security">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\Mono.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoMod.RuntimeDetour">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\MonoMod.RuntimeDetour.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoMod.Utils">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\MonoMod.Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="nunitlite">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\nunitlite.dll</HintPath>
+    </Reference>
+    <Reference Include="Photon3Unity3D">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\Photon3Unity3D.dll</HintPath>
+    </Reference>
+    <Reference Include="PhotonChat">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\PhotonChat.dll</HintPath>
+    </Reference>
+    <Reference Include="PhotonRealtime">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\PhotonRealtime.dll</HintPath>
+    </Reference>
+    <Reference Include="PhotonUnityNetworking">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\PhotonUnityNetworking.dll</HintPath>
+    </Reference>
+    <Reference Include="PhotonUnityNetworking.Utilities">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\PhotonUnityNetworking.Utilities.dll</HintPath>
+    </Reference>
+    <Reference Include="PhotonVoice">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\PhotonVoice.dll</HintPath>
+    </Reference>
+    <Reference Include="PhotonVoice.API">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\PhotonVoice.API.dll</HintPath>
+    </Reference>
+    <Reference Include="PhotonVoice.PUN">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\PhotonVoice.PUN.dll</HintPath>
+    </Reference>
+    <Reference Include="PlayFab">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\PlayFab.dll</HintPath>
+    </Reference>
+    <Reference Include="Tomlet">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\Tomlet.dll</HintPath>
+    </Reference>
+    <Reference Include="UnhollowerBaseLib">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\UnhollowerBaseLib.dll</HintPath>
+    </Reference>
+    <Reference Include="UnhollowerRuntimeLib">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\UnhollowerRuntimeLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Animation.Rigging">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\Unity.Animation.Rigging.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\Unity.Burst.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.InputSystem">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\Unity.InputSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Mathematics">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\Unity.Mathematics.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.CoreUtils">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\Unity.XR.CoreUtils.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.Interaction.Toolkit">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\Unity.XR.Interaction.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.Interaction.Toolkit.Samples.StarterAssets">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\Unity.XR.Interaction.Toolkit.Samples.StarterAssets.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.Management">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\Unity.XR.Management.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.Oculus">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\Unity.XR.Oculus.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.OpenXR">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\Unity.XR.OpenXR.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.OpenXR.Features.ConformanceAutomation">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\Unity.XR.OpenXR.Features.ConformanceAutomation.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.OpenXR.Features.MetaQuestSupport">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\Unity.XR.OpenXR.Features.MetaQuestSupport.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.OpenXR.Features.MockRuntime">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\Unity.XR.OpenXR.Features.MockRuntime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.OpenXR.Features.OculusQuestSupport">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\Unity.XR.OpenXR.Features.OculusQuestSupport.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.OpenXR.Features.RuntimeDebugger">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\Unity.XR.OpenXR.Features.RuntimeDebugger.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AccessibilityModule">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\UnityEngine.AccessibilityModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AIModule">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\UnityEngine.AIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AndroidJNIModule">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\UnityEngine.AndroidJNIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ARModule">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\UnityEngine.ARModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\UnityEngine.AssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClothModule">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\UnityEngine.ClothModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CrashReportingModule">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\UnityEngine.CrashReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DirectorModule">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\UnityEngine.DirectorModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DSPGraphModule">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\UnityEngine.DSPGraphModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GameCenterModule">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\UnityEngine.GameCenterModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GIModule">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\UnityEngine.GIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GridModule">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\UnityEngine.GridModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.HotReloadModule">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\UnityEngine.HotReloadModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Il2CppAssetBundleManager">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\UnityEngine.Il2CppAssetBundleManager.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Il2CppImageConversionManager">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\UnityEngine.Il2CppImageConversionManager.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\UnityEngine.InputLegacyModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputModule">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\UnityEngine.InputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.JSONSerializeModule">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\UnityEngine.JSONSerializeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.LocalizationModule">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\UnityEngine.LocalizationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\UnityEngine.ParticleSystemModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PerformanceReportingModule">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\UnityEngine.PerformanceReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Physics2DModule">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\UnityEngine.Physics2DModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ProfilerModule">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\UnityEngine.ProfilerModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ScreenCaptureModule">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\UnityEngine.ScreenCaptureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SharedInternalsModule">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\UnityEngine.SharedInternalsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpatialTracking">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\UnityEngine.SpatialTracking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteMaskModule">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\UnityEngine.SpriteMaskModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteShapeModule">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\UnityEngine.SpriteShapeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.StreamingModule">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\UnityEngine.StreamingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SubstanceModule">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\UnityEngine.SubstanceModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SubsystemsModule">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\UnityEngine.SubsystemsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainModule">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\UnityEngine.TerrainModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainPhysicsModule">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\UnityEngine.TerrainPhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextCoreFontEngineModule">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\UnityEngine.TextCoreFontEngineModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextCoreTextEngineModule">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\UnityEngine.TextCoreTextEngineModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TilemapModule">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\UnityEngine.TilemapModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TLSModule">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\UnityEngine.TLSModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsModule">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\UnityEngine.UIElementsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsNativeModule">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\UnityEngine.UIElementsNativeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UmbraModule">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\UnityEngine.UmbraModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UNETModule">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\UnityEngine.UNETModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityAnalyticsCommonModule">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\UnityEngine.UnityAnalyticsCommonModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityAnalyticsModule">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\UnityEngine.UnityAnalyticsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityConnectModule">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\UnityEngine.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityCurlModule">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\UnityEngine.UnityCurlModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityTestProtocolModule">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\UnityEngine.UnityTestProtocolModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAudioModule">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestModule">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\UnityEngine.UnityWebRequestModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestWWWModule">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VehiclesModule">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\UnityEngine.VehiclesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VFXModule">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\UnityEngine.VFXModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VideoModule">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\UnityEngine.VideoModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VRModule">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\UnityEngine.VRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.WindModule">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\UnityEngine.WindModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.XRModule">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\UnityEngine.XRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="ValueTupleBridge">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\ValueTupleBridge.dll</HintPath>
+    </Reference>
+    <Reference Include="WebSocketDotNet">
+      <HintPath>..\..\..\AetherPadTemp\AetherTemp\bin\Debug\Imports\WebSocketDotNet.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>
