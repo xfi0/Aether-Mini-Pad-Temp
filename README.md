@@ -1,7 +1,7 @@
 # Aether Menu Template (Unofficial Port)
 
 This is an unofficial port of the popular [Aether Template](https://github.com/zyroyz/AetherMiniPadTemp)
-for bepinex
+for made for bepinex. 
 **Disclaimer:** I am not affiliated with zyroyz or the original Aether Template.
 
 ## Features
