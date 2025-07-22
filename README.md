@@ -1,16 +1,23 @@
-# ii's Stupid Template
-ii's Stupid Template is a mod menu template for Gorilla Tag with custom categories and the maximum amount of customization possible. This template is meant for more advanced users, so if you're a new menu creator, this could be difficult for you.
+# Aether Menu Template (Unofficial Port)
 
-## Do I need permission to use this?
-No, this template is free and public for anyone to use. You are welcome to utilize it for your projects, modify it to suit your needs, and share it with others. We believe in a collaborative and open community where resources are accessible to all.
+This is an unofficial port of the popular [Aether Template](https://github.com/zyroyz/AetherMiniPadTemp)
+for bepinex
+**Disclaimer:** I am not affiliated with zyroyz or the original Aether Template.
 
----
+## Features
+- Easy-to-customize menu template
+- Clean UI
+- Sexy
+- Femboy
 
-# Installation
+## Installation
 
-- Download the source code from [here](https://github.com/iiDk-the-actual/iis.Stupid.Template/releases/latest)
-- Change your `<GamePath>` (Gorilla Tag directory) in `Directory.Build.props` if required
-- Change the menu name in `PluginInfo.cs`
-- Edit the menu visuals in `Menu/Settings.cs`
-- Add buttons in `Menu/Buttons.cs`
-- Build with `Ctrl` + `Shift` + `B`, it will get put in your plugins folder automatically
+1. Download the latest release:  [Release V1.0](https://github.com/xfi0/Aether-Mini-Pad-Temp/releases/download/Release-V1.0/AetherMiniPadTemp-main.rar)
+
+2. Rename the project in `PluginInfo.cs`
+
+3. Customize your menu:
+   - Add buttons in `Buttons.cs`
+   - Add sections as needed
+
+4. Build the project (`Ctrl + B` in Visual Studio)
